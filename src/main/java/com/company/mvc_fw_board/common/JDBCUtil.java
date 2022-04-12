@@ -15,7 +15,7 @@ public class JDBCUtil {
 	public static Connection getConnection() throws Exception {
 		try {
 			Class.forName(driver);
-			Connection con = DriverManager.getConnection(url, "sa", "");
+			Connection con = DriverManager.getConnection(url, "test", "");
 			return con;
 		} catch(Exception e) {
 			e.printStackTrace();
