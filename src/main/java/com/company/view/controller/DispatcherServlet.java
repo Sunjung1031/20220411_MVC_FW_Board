@@ -54,6 +54,6 @@ public class DispatcherServlet extends HttpServlet {
 			view = viewResolver.getView(viewName);  // "./login.jsp"
 		}
 		// 5. 검색된 페이지로 이동한다.
-		response.sendRedirect(view);
+		response.sendRedirect(view); //
 	}
 }
